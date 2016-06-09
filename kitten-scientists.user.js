@@ -35,7 +35,7 @@ var options = {
     showactivity: true,
 
     // The default consume rate.
-    consume: 0.6,
+    consume: 0.1,
 
     // How many messages to keep in the game log.
     logMessages:   100,
@@ -61,7 +61,7 @@ var options = {
             // Should hunters be sent on hunts automatically?
             enabled: true,
             // At what percentage of the catpower storage capacity should KS send hunters on hunts?
-            trigger: 0.6
+            trigger: 0.9
         },
         build: {
             // Should buildings be built automatically?
