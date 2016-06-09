@@ -932,13 +932,13 @@ if (game.colorScheme !== 'sleek') {
     middle.css({
         marginTop: '1%',
         height: '90%',
-        width: '48%'
+        width: '40%'
     });
 
     right.css({
         overflowY: 'scroll',
         height: '92%',
-        width: '19%'
+        width: '27%'
     });
 
     addRule('#gameLog .msg {'
@@ -1136,7 +1136,7 @@ var addNewResourceOption = function (name, title) {
     var stock = $('<div/>', {
         id: 'stock-value-' + name,
         text: 'Stock: ' + game.getDisplayValueExt(stock),
-        css: {cursor: 'pointer', display: 'inline-block', width: '80px'},
+        css: {cursor: 'pointer', display: 'inline-block', width: '90px'},
     });
 
     var consume = $('<div/>', {
