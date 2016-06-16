@@ -848,7 +848,7 @@ TradeManager.prototype = {
         return Math.floor(amount);
     },
     getMaterials: function (name) {
-        var materials = {catpower: 50, gold: 15};
+        var materials = {manpower: 50, gold: 15};
 
         if (name === undefined)
             return materials;
