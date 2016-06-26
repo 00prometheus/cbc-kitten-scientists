@@ -205,29 +205,29 @@ var options = {
             // are more effective during specific seasons.
             // The *allowcapped* property allows us to trade even if the sold resources are at their cap.
             items: {
-                dragons:    {enabled: false,  require: 'titanium',    allowcapped: false,
-                    summer:  true,  autumn:  true,  winter:  true,          spring:      true},
+                dragons:    {enabled: false,  require: false, provides: 'uranium', allowcapped: false, //  'titanium'
+                    summer:  true,  autumn:  true,  winter:  true, spring: true},
 
-                zebras:     {enabled: true,  require: false,         allowcapped: false,
-                    summer:  true,  autumn:  true,  winter:  true,          spring:      true},
+                zebras:     {enabled: true,  require: false, provides: 'titanium', allowcapped: false,
+                    summer:  true,  autumn:  true,  winter:  true, spring: true},
 
-                lizards:    {enabled: false,  require: 'minerals',    allowcapped: false,
-                    summer:  true,  autumn:  false, winter:  false,         spring:      false},
+                lizards:    {enabled: false,  require: false, provides: 'wood', allowcapped: false, // 'minerals'
+                    summer:  true,  autumn:  false, winter:  false, spring: false},
 
-                sharks:     {enabled: false,  require: 'iron',        allowcapped: false,
-                    summer:  false, autumn:  false, winter:  true,          spring:      false},
+                sharks:     {enabled: false,  require: false, provides: 'catnip', allowcapped: false, // 'iron'
+                    summer:  false, autumn:  false, winter:  true, spring: false},
 
-                griffins:   {enabled: false,  require: 'wood',        allowcapped: false,
-                    summer:  false, autumn:  true,  winter:  false,         spring:      false},
+                griffins:   {enabled: false,  require: false, provides: 'iron', allowcapped: true, // 'wood'
+                    summer:  false, autumn:  true,  winter:  false, spring: false},
 
-                nagas:      {enabled: false,  require: false,         allowcapped: false,
-                    summer:  false, autumn:  false, winter:  false,         spring:      true},
+                nagas:      {enabled: false,  require: false, provides: 'minerals', allowcapped: false,
+                    summer:  false, autumn:  false, winter:  false, spring: true},
 
-                spiders:    {enabled: false,  require: false,         allowcapped: false,
-                    summer:  false, autumn:  true,  winter:  false,         spring:      false},
+                spiders:    {enabled: false,  require: false, provides: 'coal', allowcapped: false,
+                    summer:  false, autumn:  true,  winter:  false, spring: false},
 
-                leviathans: {enabled: false,  require: 'unobtainium', allowcapped: true,
-                    summer:  true,  autumn:  true,  winter:  true,          spring:      true}
+                leviathans: {enabled: false,  require: false, provides: undefined, allowcapped: true, // 'unobtainium'
+                    summer:  true,  autumn:  true,  winter:  true, spring: true}
             }
         },
         resources: {
